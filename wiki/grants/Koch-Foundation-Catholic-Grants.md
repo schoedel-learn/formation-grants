@@ -38,3 +38,4 @@ last_checked: "2026-10-22"
 - Amounts: blank — no award range stated on any page.
 - next_deadline blank: the 2026 request window (Jan 1–May 1) has closed; the page states the recurring window but not a dated 2027 call.
 - status: maybe — funded categories named on the page are "Direct Evangelization" and "Preparation of Evangelists"; our focus list has no verbatim match.
+- Grants received: see wiki/Grants-Received-2025-2027.md — Assumption Seminary received $15,000 for seminarian formation (FYE 3/2025, 990 + Koch annual report).

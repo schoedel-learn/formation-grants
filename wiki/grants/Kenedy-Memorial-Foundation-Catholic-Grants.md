@@ -38,3 +38,4 @@ last_checked: "2026-10-22"
 - Amounts: max treated as $50,000 ( sectarian >$50,000 requires a 3/4 board vote and "is not favored" — stated on policy page); amount_min blank, page does not state a floor.
 - next_deadline blank: the Oct 15, 2026 deadline has just passed; the next date (2027-10-15) is derivable but not yet published as a dated call.
 - 2026-10-22: owner confirmed the applicant is the Archdiocese of San Antonio, TX — Texas-mandatory funds apply; next window per the verbatim cycle rule is 2027-10-15 (2026 window closed a week ago); upgraded maybe -> eligible.
+- Grants received: see wiki/Grants-Received-2025-2027.md — Kenedy gave archSA entities $422,000 in FY2024 (990 Schedule I) + a public-reported $620,000 aggregate across 10 grants in 2025. Largest recurring formation funder in the window.

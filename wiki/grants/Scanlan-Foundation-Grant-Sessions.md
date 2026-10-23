@@ -36,3 +36,4 @@ last_checked: "2026-10-22"
 - Amounts: blank because the page does not state award ranges.
 - status: maybe — eligibility is limited by geography, quoted verbatim from the page on 2026-10-22: "your organization must be a Roman Catholic, 501(c)(3) nonprofit organization in the State of Texas." If the applicant (arch)diocese is one of the 15 Texas dioceses, treat as eligible.
 - 2026-10-22: owner confirmed the applicant is the Archdiocese of San Antonio, TX — squarely inside the Texas eligibility rule and the documented diocesan application class; upgraded maybe -> eligible.
+- Grants received: see wiki/Grants-Received-2025-2027.md — $275,000 unrestricted to the archdiocese in FY2024 (990 grant row, verbatim). We are a returning grantee; FY2025 filing lands by ~Feb 2027.

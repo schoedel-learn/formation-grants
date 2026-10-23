@@ -22,6 +22,15 @@ body is a boss-facing summary. Status values live in the front matter
 4. Commit, push, then run `sh scripts/publish.sh` from the repo root to
    refresh `data/grants.csv`, the database, and the public table page.
 
+## Grants received (2025–2027)
+
+A records scan of grants Archdiocese of San Antonio entities are already
+receiving — IRS 990 grantee schedules plus funder/archdiocesan public reporting —
+is consolidated at [`Grants-Received-2025-2027.md`](Grants-Received-2025-2027.md)
+(details: [`received/Lane-G-990-Grantee-Records.md`](received/Lane-G-990-Grantee-Records.md)
+and [`received/Lane-H-Public-Reporting-Records.md`](received/Lane-H-Public-Reporting-Records.md)).
+Next re-check: FY2025 990s, projected November 2026–February 2027.
+
 ## Index
 
 | [Diocesan Grant Application (plus BCIM and CNAMB school/religious-education grants)](grants/Black-And-Indian-Mission-Office-Diocesan-Grants) | Black and Indian Mission Office | ['faith_formation', 'adult_faith_formation'] | eligible |
