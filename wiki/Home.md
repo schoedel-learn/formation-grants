@@ -59,9 +59,9 @@ Next re-check: FY2025 990s, projected November 2026–February 2027.
 | [Grants 4 Good](grants/Catholic-United-Financial-Grants-4-Good) | Catholic United Financial, a Trusted Fraternal Life brand | ['family', 'faith_formation'] | maybe |
 | [Community Marriage Initiative Grants](grants/Community-Marriage-Initiatives-Fund-Community-Marriage-Initiatives-Grants) | Community Marriage Initiatives Fund | ['family', 'marriage'] | maybe |
 | [Annunciation Grant Cycle](grants/Incarnate-Word-Foundation-Annunciation-Grant-Cycle) | Incarnate Word Foundation | ['family'] | maybe |
-| [Sectarian (Catholic) Grants Program](grants/Kenedy-Memorial-Foundation-Catholic-Grants) | The John G. & Marie Stella Kenedy Memorial Foundation | ['faith_formation'] | eligible |
+| [Sectarian (Catholic) Grants Program](grants/Kenedy-Memorial-Foundation-Catholic-Grants) | The John G. & Marie Stella Kenedy Memorial Foundation | ['faith_formation'] | applied |
 | [Faith in Action Family Programs](grants/Knights-Of-Columbus-Faith-In-Action-Family-Programs) | Knights of Columbus | ['family'] | not_eligible |
-| [Annual Grant Program (Letter of Request)](grants/Koch-Foundation-Catholic-Grants) | The Koch Foundation | ['faith_formation'] | maybe |
+| [Annual Grant Program (Letter of Request)](grants/Koch-Foundation-Catholic-Grants) | The Koch Foundation | ['faith_formation'] | applied |
 | [National Initiative to Strengthen Christian Campus Ministries at Colleges and Universities (Campus Ministry Initiative)](grants/Lilly-Campus-Ministry-Initiative) | Lilly Endowment Inc. | ['adult_faith_formation', 'faith_formation'] | eligible |
 | [National Initiative to Strengthen Chaplaincies at Colleges and Universities (Chaplaincy Initiative)](grants/Lilly-Chaplaincy-Initiative) | Lilly Endowment Inc. | ['faith_formation'] | not_eligible |
 | [Christian Parenting and Caregiving Initiative](grants/Lilly-Christian-Parenting-and-Caregiving) | Lilly Endowment Inc. | ['family'] | not_eligible |
@@ -73,7 +73,7 @@ Next re-check: FY2025 990s, projected November 2026–February 2027.
 | [CorWorks Parish Accelerator (seed funding)](grants/Osv-Institute-Corworks) | OSV Institute for Catholic Innovation | — | not_eligible |
 | [Domestic Grant Program (Spring and Fall cycles)](grants/Raskob-Foundation-Domestic-Grant-Program) | Raskob Foundation for Catholic Activities | ['family', 'faith_formation', 'adult_faith_formation'] | eligible |
 | [Beyond Sunday Scholarships (tuition assistance and school grants)](grants/Roman-Catholic-Foundation-St-Louis-Beyond-Sunday) | Roman Catholic Foundation of Eastern Missouri | — | not_eligible |
-| [Grant Program (Sessions 2027A and 2027B)](grants/Scanlan-Foundation-Grant-Sessions) | Scanlan Foundation | ['marriage', 'family', 'faith_formation'] | eligible |
+| [Grant Program (Sessions 2027A and 2027B)](grants/Scanlan-Foundation-Grant-Sessions) | Scanlan Foundation | ['marriage', 'family', 'faith_formation'] | applied |
 | [Vocations Grant Program](grants/Serra-International-Foundation-Vocations-Grant) | The Serra International Foundation | ['faith_formation'] | maybe |
 | [Society for the Propagation of the Faith (mission grants/subsidies)](grants/Society-For-The-Propagation-Of-The-Faith) | Society for the Propagation of the Faith (The Pontifical Mission Societies USA) | — | not_eligible |
 | [Pilgrims of Hope Matching Grant](grants/Trusted-Fraternal-Life-Pilgrims-Of-Hope-Matching-Grant) | Trusted Fraternal Life | ['faith_formation', 'family'] | maybe |
