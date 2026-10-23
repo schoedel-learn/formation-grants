@@ -4,9 +4,10 @@
 # Usage: sh scripts/publish.sh        (from the repo root; dash-safe)
 set -eu
 cd "$HOME/Documents/Development/formation-grants"
+PYTHON=python3; [ -x .venv/bin/python3 ] && PYTHON=.venv/bin/python3   # repo venv has python-frontmatter
 git pull --rebase
-python3 scripts/gen_csv.py
-python3 scripts/import_mathesar.py
+"$PYTHON" scripts/gen_csv.py
+"$PYTHON" scripts/import_mathesar.py
 scp -q /tmp/grants_import.sql chroma-server:/tmp/
 ssh chroma-server "docker cp /tmp/grants_import.sql postgresql-db-db-1:/tmp/ && \
   docker exec postgresql-db-db-1 psql -U grants_app -d grants -f /tmp/grants_import.sql \
