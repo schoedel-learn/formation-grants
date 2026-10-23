@@ -19,8 +19,9 @@ for a US (arch)diocesan office.
    - Code Wiki page for this repo — requested 2026-10-22 via
      codewiki-feedback@google.com (public preview, no self-serve ingestion);
      recorded here once live. The token table below does not depend on it.
-   - Token table `https://grants.educatebarry.co/<token>/` — generated, dated,
-     and current. Token and DB credentials live in the owner's Secrets store,
+   - Boss table `https://grants.educatebarry.co/` — public, deliberately noindex
+     (robots.txt + X-Robots-Tag; owner direction 2026-10-23 removed the old
+     token path). DB credentials live in the owner's Secrets store,
      never in this repo (the repo is public).
 5. **Requirements:** Python 3 with
    `python3 -m pip install --user python-frontmatter`.
