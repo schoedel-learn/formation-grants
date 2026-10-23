@@ -16,8 +16,9 @@ for a US (arch)diocesan office.
 3. **The Mathesar database `grants` is a derived projection, read-only.** Every
    row carries its `wiki_page` filename for traceability.
 4. **Boss views:**
-   - Code Wiki page for this repo — pending Google ingestion (requested
-     2026-10-22; recorded here once live).
+   - Code Wiki page for this repo — requested 2026-10-22 via
+     codewiki-feedback@google.com (public preview, no self-serve ingestion);
+     recorded here once live. The token table below does not depend on it.
    - Token table `https://grants.educatebarry.co/<token>/` — generated, dated,
      and current. Token and DB credentials live in the owner's Secrets store,
      never in this repo (the repo is public).
