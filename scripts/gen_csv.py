@@ -43,6 +43,9 @@ for path in sorted(glob.glob(os.path.join(WIKI, 'grants', '*.md'))):
         errors.append(f"{path}: last_checked must be YYYY-MM-DD"); continue
     if pm.get('status') not in ALLOWED_STATUS:
         errors.append(f"{path}: bad status {pm.get('status')!r}"); continue
+    row_focus = norm_focus(pm.get('focus_areas'))
+    if not row_focus and pm.get('status') in ('eligible', 'maybe'):
+        errors.append(f"{path}: eligible/maybe needs at least one focus area"); continue
     row = {k: pm.get(k, '') for k in FIELDS if k not in ('focus_areas', 'wiki_page')}
     row['focus_areas'] = norm_focus(pm.get('focus_areas'))
     row['wiki_page'] = os.path.relpath(path, WIKI)

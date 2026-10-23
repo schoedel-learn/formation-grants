@@ -6,7 +6,7 @@ grantor_website: "https://osvinstitute.com"
 grantor_kind: "national_foundation"
 contact_name: ""
 contact_email: "CORWORKS@OSV.com"
-focus_areas: []
+focus_areas: []   # none — see verification: Corporal Works of Mercy scope
 amount_min:
 amount_max: 25000
 award_type: "cash"
@@ -15,7 +15,7 @@ eligibility: "CorWorks is a parish transformation initiative from the OSV Instit
 deadline_type: "annual_cycle"
 next_deadline: "2026-11-20"
 application_url: "https://reply.osv.com/corworks"
-status: "maybe"
+status: "not_eligible"
 submitted_on: ""
 decision: ""
 award_amount:
@@ -36,3 +36,4 @@ last_checked: "2026-10-22"
 - next_deadline 2026-11-20: stated on the OSV pages cited above.
 - status: maybe — focus ambiguity: the CorWorks pages describe parish responses to community needs through the Corporal Works of Mercy (hunger, isolation, housing insecurity, transportation); no formation/family/marriage programming is named, so `focus_areas` is intentionally left empty. Eligibility for parishes is clear; the diocesan role is endorsement only.
 - Relationship note: this is the OSV Institute for Catholic Innovation (osvinstitute.com), not O'Shaughnessy Ventures LLC (osv.llc), whose O'Shaughnessy Fellowships is an unrelated international individual-grantee program.
+- 2026-10-22 QC: status corrected maybe -> not_eligible; the program funds parish responses to community needs through the Corporal Works of Mercy and no formation/family/marriage programming is named — the runbook's focus-area gate excludes it.

@@ -16,7 +16,12 @@ for r in rows:
         (r['grantor_kind'], r['grantor_website'],
          r['contact_name'], r['contact_email']))
 
-lines = ["BEGIN;", "DELETE FROM grants;", "DELETE FROM grantor;"]
+lines = ["BEGIN;", "DELETE FROM grants;", "DELETE FROM grantor;",
+         # nextval() is not transactional: failed reruns advance sequences even
+         # on rollback, which would break the fixed grantor_id mapping below.
+         # Reset so the mapping (1..N) and the FKs stay correct on every reload.
+         "ALTER SEQUENCE grantor_id_seq RESTART WITH 1;",
+         "ALTER SEQUENCE grants_id_seq RESTART WITH 1;"]
 ORDERED = sorted(GRANTORS)
 GID = {g: i for i, g in enumerate(ORDERED, start=1)}
 for g in ORDERED:
@@ -27,11 +32,11 @@ for g in ORDERED:
 for r in rows:
     vals = ", ".join(lit(v) for v in (
         GID[r['grantor']], r['grant'], r['focus_areas'],
-        r['amount_min'] or 'NULL', r['amount_max'] or 'NULL',
+        r['amount_min'], r['amount_max'],
         r['award_type'] or 'cash', r['grantee_entity'], r['eligibility'],
-        r['deadline_type'] or 'annual_cycle', r['next_deadline'] or 'NULL',
-        r['application_url'], r['status'], r['submitted_on'] or 'NULL',
-        r['decision'], r['award_amount'] or 'NULL',
+        r['deadline_type'] or 'annual_cycle', r['next_deadline'],
+        r['application_url'], r['status'], r['submitted_on'],
+        r['decision'], r['award_amount'],
         r['source_url'], r['last_checked'], r['wiki_page']))
     lines.append("INSERT INTO grants (grantor_id, name, focus_areas, amount_min,"
         " amount_max, award_type, grantee_entity, eligibility, deadline_type,"

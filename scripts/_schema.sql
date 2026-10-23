@@ -14,7 +14,7 @@ CREATE TABLE IF NOT EXISTS grants (
   id             bigserial PRIMARY KEY,
   grantor_id     bigint NOT NULL REFERENCES grantor(id) ON DELETE CASCADE,
   name           text NOT NULL,
-  focus_areas    text NOT NULL,     -- space-separated tags: family marriage adult_faith_formation faith_formation ocia
+  focus_areas    text,               -- space-separated tags; NULL allowed while researching (no confirmed areas yet): family marriage adult_faith_formation faith_formation ocia
   amount_min     numeric,
   amount_max     numeric,
   award_type     text NOT NULL DEFAULT 'cash',
