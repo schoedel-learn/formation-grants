@@ -1,7 +1,7 @@
 -- scripts/_schema.sql — one-time DDL for the grants database (chroma-server, PG `grants`).
 -- Applied as role grants_app. Tables live in `public` (Mathesar connects as grants_app,
 -- which owns its objects there; delete+reload means no staging table is needed).
-CREATE TABLE grantor (
+CREATE TABLE IF NOT EXISTS grantor (
   id            bigserial PRIMARY KEY,
   name          text NOT NULL UNIQUE,
   kind          text,
@@ -9,7 +9,8 @@ CREATE TABLE grantor (
   contact_name  text,
   contact_email text
 );
-CREATE TABLE grant (
+-- NOTE: `grant` is a reserved word in PostgreSQL; the plural `grants` is the table name.
+CREATE TABLE IF NOT EXISTS grants (
   id             bigserial PRIMARY KEY,
   grantor_id     bigint NOT NULL REFERENCES grantor(id) ON DELETE CASCADE,
   name           text NOT NULL,
