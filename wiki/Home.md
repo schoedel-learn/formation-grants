@@ -33,7 +33,11 @@ Next re-check: FY2025 990s, projected November 2026–February 2027.
 
 ## Index
 
+| [Adult Catechetical Grants (spring and fall cycles)](grants/Acta-Foundation-Adult-Catechetical-Grants) | ACTA Foundation | ['adult_faith_formation'] | eligible |
+| [Pastoral and Religious Formation Project Aid (ACN)](grants/Aid-To-The-Church-In-Need-Usa-Pastoral-Project-Aid) | Aid to the Church in Need (United States) | ['faith_formation'] | maybe |
+| [Unsolicited Grants (Letter of Inquiry)](grants/Alkek-Foundation-Texas-Religious-And-Educational-Grants) | Albert and Margaret Alkek Foundation | ['faith_formation'] | maybe |
 | [Diocesan Grant Application (plus BCIM and CNAMB school/religious-education grants)](grants/Black-And-Indian-Mission-Office-Diocesan-Grants) | Black and Indian Mission Office | ['faith_formation', 'adult_faith_formation'] | eligible |
+| [Vital Worship, Vital Preaching Grants — Worshiping Communities stream](grants/Calvin-Institute-Of-Christian-Worship-Vital-Worship-Grants) | Calvin Institute of Christian Worship (Calvin University) | ['faith_formation'] | eligible |
 | [Grant Program (Religion thematic area)](grants/Carrie-Estelle-Doheny-Foundation-Religion-Grants) | Carrie Estelle Doheny Foundation | ['faith_formation'] | maybe |
 | [Endowment and Donor Advised Fund Distributions](grants/Catholic-Community-Foundation-Baltimore-Grant-Funds) | The Catholic Community Foundation | — | researching |
 | [Tabor Fund Grant Program](grants/Catholic-Community-Foundation-Cleveland-Tabor-Fund) | The Catholic Community Foundation | ['faith_formation'] | maybe |
@@ -58,6 +62,7 @@ Next re-check: FY2025 990s, projected November 2026–February 2027.
 | [Foundation Grant Programs (Chastity & Abstinence Education, Education Technology, Event Sponsorship, Matching Grants)](grants/Catholic-United-Financial-Foundation-Grant-Programs) | Catholic United Financial, a Trusted Fraternal Life brand | ['faith_formation'] | eligible |
 | [Grants 4 Good](grants/Catholic-United-Financial-Grants-4-Good) | Catholic United Financial, a Trusted Fraternal Life brand | ['family', 'faith_formation'] | maybe |
 | [Community Marriage Initiative Grants](grants/Community-Marriage-Initiatives-Fund-Community-Marriage-Initiatives-Grants) | Community Marriage Initiatives Fund | ['family', 'marriage'] | maybe |
+| [Community Grants (Spring & Fall Funding Cycles)](grants/Greehey-Family-Foundation-Community-Grants) | The Greehey Family Foundation | ['family'] | maybe |
 | [Annunciation Grant Cycle](grants/Incarnate-Word-Foundation-Annunciation-Grant-Cycle) | Incarnate Word Foundation | ['family'] | maybe |
 | [Sectarian (Catholic) Grants Program](grants/Kenedy-Memorial-Foundation-Catholic-Grants) | The John G. & Marie Stella Kenedy Memorial Foundation | ['faith_formation'] | applied |
 | [Faith in Action Family Programs](grants/Knights-Of-Columbus-Faith-In-Action-Family-Programs) | Knights of Columbus | ['family'] | not_eligible |
@@ -68,14 +73,20 @@ Next re-check: FY2025 990s, projected November 2026–February 2027.
 | [Exploring Christian Practices Initiative](grants/Lilly-Exploring-Christian-Practices) | Lilly Endowment Inc. | ['adult_faith_formation', 'faith_formation'] | not_eligible |
 | [Nurturing Children Through Worship and Prayer Initiative (incl. Initiative II)](grants/Lilly-Nurturing-Children-Through-Worship-and-Prayer) | Lilly Endowment Inc. | ['family', 'faith_formation'] | maybe |
 | [Serving Neighbors Through Congregational Collaborations Initiative](grants/Lilly-Serving-Neighbors-Through-Congregational-Collaborations) | Lilly Endowment Inc. | ['family', 'faith_formation'] | eligible |
+| [Pastoral Study Project Grant (annual cycle)](grants/Louisville-Institute-Pastoral-Study-Project) | Louisville Institute | ['adult_faith_formation'] | eligible |
+| [General Grant Inquiry (rolling, via Grants Portal)](grants/Moody-Foundation-General-Grant-Inquiry) | Moody Foundation | ['family'] | maybe |
 | [Capital Grants for Historic Houses of Worship](grants/National-Fund-For-Sacred-Places-Capital-Grants) | National Fund for Sacred Places | — | not_eligible |
 | [Making Parishes Everyone's Home (Parish Mentorship Initiative)](grants/Ncpd-Making-Parishes-Everyones-Home) | National Catholic Partnership on Disability | ['faith_formation'] | researching |
+| [Parish Grants Program (annual cycle)](grants/Ocp-Parish-Grants-Program) | Oregon Catholic Press (OCP) | ['faith_formation'] | eligible |
 | [CorWorks Parish Accelerator (seed funding)](grants/Osv-Institute-Corworks) | OSV Institute for Catholic Innovation | — | not_eligible |
+| [Annual Grants (Trustee-designated projects and programs)](grants/Papal-Foundation-Grants-Overview) | The Papal Foundation | ['adult_faith_formation'] | maybe |
 | [Domestic Grant Program (Spring and Fall cycles)](grants/Raskob-Foundation-Domestic-Grant-Program) | Raskob Foundation for Catholic Activities | ['family', 'faith_formation', 'adult_faith_formation'] | eligible |
 | [Beyond Sunday Scholarships (tuition assistance and school grants)](grants/Roman-Catholic-Foundation-St-Louis-Beyond-Sunday) | Roman Catholic Foundation of Eastern Missouri | — | not_eligible |
+| [Special and Urgent Needs (SUN) Grant](grants/San-Antonio-Area-Foundation-Special-And-Urgent-Needs) | San Antonio Area Foundation | ['family'] | maybe |
 | [Grant Program (Sessions 2027A and 2027B)](grants/Scanlan-Foundation-Grant-Sessions) | Scanlan Foundation | ['marriage', 'family', 'faith_formation'] | applied |
 | [Vocations Grant Program](grants/Serra-International-Foundation-Vocations-Grant) | The Serra International Foundation | ['faith_formation'] | maybe |
 | [Society for the Propagation of the Faith (mission grants/subsidies)](grants/Society-For-The-Propagation-Of-The-Faith) | Society for the Propagation of the Faith (The Pontifical Mission Societies USA) | — | not_eligible |
+| [Open Grant Application (Board reviews February, July, November)](grants/Strake-Foundation-Open-Grant-Application) | Strake Foundation | ['faith_formation', 'adult_faith_formation'] | eligible |
 | [Pilgrims of Hope Matching Grant](grants/Trusted-Fraternal-Life-Pilgrims-Of-Hope-Matching-Grant) | Trusted Fraternal Life | ['faith_formation', 'family'] | maybe |
 | [Catholic Campaign for Human Development (CCHD) Community & Economic Development Grants](grants/USCCB-Catholic-Campaign-For-Human-Development) | USCCB Catholic Campaign for Human Development | — | not_eligible |
 | [Catholic Communication Campaign (CCC) Grants](grants/USCCB-Catholic-Communication-Campaign) | USCCB Committee on Communications (Catholic Communication Campaign) | ['faith_formation'] | maybe |

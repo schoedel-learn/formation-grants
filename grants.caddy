@@ -1,6 +1,8 @@
-# grants.educatebarry.co — link-only boss table. __TOKEN__ is replaced at
-# deploy time (never in the repo). root path = container view of the
-# matrix_caddy_data volume (host: /var/lib/docker/volumes/matrix_caddy_data/_data).
+# grants.educatebarry.co — public boss table (noindex). Owner direction
+# 2026-10-23: available to anyone at the root; deliberately NOT indexed by
+# search engines (X-Robots-Tag + robots.txt disallow). root path = container
+# view of the matrix_caddy_data volume (host:
+# /var/lib/docker/volumes/matrix_caddy_data/_data).
 #
 # Heredoc rules learned on deploy: the marker must end the line EXACTLY (no
 # trailing space) or the heredoc never opens; the body precedes the status;
@@ -11,8 +13,6 @@ grants.educatebarry.co {
 User-agent: *
 Disallow: /
 ROBOTSTXT 200
-    @wrongpath not path /__TOKEN__/*
-    respond @wrongpath "Not found" 404
     root * /data/sites/grants.educatebarry.co
     file_server
 }

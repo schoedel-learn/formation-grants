@@ -65,7 +65,7 @@ h1{font-size:18px;margin:8px}small{color:#999}
 <table><thead><tr><th>Grant</th><th>Grantor</th><th>Focus areas</th><th>Amount</th>
 <th>Who applies</th><th>Next deadline</th><th>Status</th><th>Source</th></tr></thead>
 <tbody>%(inhand)s</tbody></table>
-<small>Exported %(today)s. Link-only; not indexed.</small>
+<small>Exported %(today)s. Public — deliberately not indexed by search engines.</small>
 <script>
 const q=document.getElementById('q'),rows=[...document.querySelectorAll('tbody tr')];
 q.addEventListener('input',()=>{const v=q.value.toLowerCase();

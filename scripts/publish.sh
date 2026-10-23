@@ -19,12 +19,11 @@ ssh chroma-server "docker cp /tmp/grants_import.sql postgresql-db-db-1:/tmp/ && 
   && rm /tmp/grants_import.sql"
 rm -f /tmp/grants_import.sql
 python3 scripts/gen_site.py
-TOKEN=$(read-secret-value GRANTS_PUBLICATION_TOKEN)   # key: Secrets.md ## Grants DB
 ssh lx-primary 'rm -rf /tmp/grants-stage && mkdir -p /tmp/grants-stage'
 scp -q site/index.html lx-primary:/tmp/grants-stage/
-ssh lx-primary "sudo mkdir -p '/var/lib/docker/volumes/matrix_caddy_data/_data/sites/grants.educatebarry.co/$TOKEN' && \
-  sudo rsync -a --delete /tmp/grants-stage/ '/var/lib/docker/volumes/matrix_caddy_data/_data/sites/grants.educatebarry.co/$TOKEN/'"
-code=$(curl -s -o /dev/null -w '%{http_code}' "https://grants.educatebarry.co/$TOKEN/")
+ssh lx-primary "sudo mkdir -p '/var/lib/docker/volumes/matrix_caddy_data/_data/sites/grants.educatebarry.co' && \
+  sudo rsync -a --delete /tmp/grants-stage/ '/var/lib/docker/volumes/matrix_caddy_data/_data/sites/grants.educatebarry.co/'"
+code=$(curl -s -o /dev/null -w '%{http_code}' 'https://grants.educatebarry.co/')
 [ "$code" = 200 ] || { echo "publish verification FAILED: $code"; exit 1; }
 echo "published OK ($(date))"
 # Volume path /var/lib/docker/volumes/... is CORRECT; the container mounts it at
