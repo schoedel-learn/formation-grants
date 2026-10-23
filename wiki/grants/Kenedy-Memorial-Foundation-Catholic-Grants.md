@@ -13,9 +13,9 @@ award_type: cash
 grantee_entity: apostolate_any
 eligibility: "All grant applications must be considered annually at the Board of Directors meetings in May of each year. To be considered in May, an application must be received by October 15th of the previous year. All grant funds must be used exclusively within Texas and exclusively for religious, educational or charitable purposes. The Foundation makes grants to non-profit organizations that are 501(c)(3) charitable organizations under the Internal Revenue Service Code. To be considered for a grant, an applicant must be listed in the IRS Publication 78 or the Official Catholic Directory, as appropriate. Note to Sectarian applicants: Application procedures differ among Diocese. Please check with your Diocese before applying to ensure that you comply with Diocese protocols."
 deadline_type: annual_cycle
-next_deadline: ""
+next_deadline: "2027-10-15"
 application_url: "https://kenedy.org/grants/application-process/"
-status: maybe
+status: eligible
 submitted_on: ""
 decision: ""
 award_amount:
@@ -37,3 +37,4 @@ last_checked: "2026-10-22"
 - Archdiocese of San Antonio "Grants & Giving" Stewardship Day deck (archsa.org PDF) opened 2026-10-22: lists Kenedy as Catholic-friendly funder, deadline October 15th, award notifications late May.
 - Amounts: max treated as $50,000 ( sectarian >$50,000 requires a 3/4 board vote and "is not favored" — stated on policy page); amount_min blank, page does not state a floor.
 - next_deadline blank: the Oct 15, 2026 deadline has just passed; the next date (2027-10-15) is derivable but not yet published as a dated call.
+- 2026-10-22: owner confirmed the applicant is the Archdiocese of San Antonio, TX — Texas-mandatory funds apply; next window per the verbatim cycle rule is 2027-10-15 (2026 window closed a week ago); upgraded maybe -> eligible.

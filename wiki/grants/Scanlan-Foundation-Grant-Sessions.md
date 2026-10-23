@@ -15,7 +15,7 @@ eligibility: "To qualify to apply for a grant from Scanlan Foundation, your orga
 deadline_type: "annual_cycle"
 next_deadline: "2026-12-15"
 application_url: "https://scanlanfoundation.org/grants/"
-status: "maybe"
+status: "eligible"
 submitted_on: ""
 decision: ""
 award_amount:
@@ -35,3 +35,4 @@ last_checked: "2026-10-22"
 - Pillar language checked verbatim on 2026-10-22: "four main mission-furthering pillars of funding: Marriage & Holy Families, Catholic Education, Evangelization & Discipleship, and Life & Human Dignity."
 - Amounts: blank because the page does not state award ranges.
 - status: maybe — eligibility is limited by geography, quoted verbatim from the page on 2026-10-22: "your organization must be a Roman Catholic, 501(c)(3) nonprofit organization in the State of Texas." If the applicant (arch)diocese is one of the 15 Texas dioceses, treat as eligible.
+- 2026-10-22: owner confirmed the applicant is the Archdiocese of San Antonio, TX — squarely inside the Texas eligibility rule and the documented diocesan application class; upgraded maybe -> eligible.
