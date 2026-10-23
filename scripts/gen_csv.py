@@ -30,7 +30,11 @@ pages, errors = [], []
 for path in sorted(glob.glob(os.path.join(WIKI, 'grants', '*.md'))):
     if os.path.basename(path).startswith('_'):     # template
         continue
-    pm = frontmatter.load(path)
+    try:
+        pm = frontmatter.load(path)
+    except Exception as exc:                       # malformed YAML names the file
+        errors.append(f"{path}: YAML parse error: {str(exc).splitlines()[0]}")
+        continue
     if not pm.get('grant') or not pm.get('grantor'):
         errors.append(f"{path}: missing grant/grantor"); continue
     if not str(pm.get('source_url') or '').startswith('http'):

@@ -11,7 +11,7 @@ amount_min:
 amount_max:
 award_type: cash
 grantee_entity: diocesan_office
-eligibility: "Interested charitable organizations with Internal Revenue Code section 501(c)(3) and public charity status that are committed to supporting Christian congregations are eligible to participate in Nurturing Children. Eligible organizations may submit proposals of up to $1.25 million each that may be used for up to a five-year period." (2024 round, now closed)
+eligibility: "Interested charitable organizations with Internal Revenue Code section 501(c)(3) and public charity status that are committed to supporting Christian congregations are eligible to participate in Nurturing Children. Eligible organizations may submit proposals of up to $1.25 million each that may be used for up to a five-year period(2024 round, now closed)."
 deadline_type: invitation_only
 next_deadline: ""
 application_url: "https://lillyendowment.org/nurturing-children-through-worship-and-prayer-initiative/"

@@ -11,7 +11,7 @@ amount_min:
 amount_max:
 award_type: cash
 grantee_entity: diocesan_office
-eligibility: "Eligible charitable organizations located in the United States were able submit proposals to create new or enhance existing programs that advance one or both of the following objectives: Supporting congregations (especially pastors, children and youth ministry staff and congregational volunteer leaders) and other Christian organizations by developing and providing resources, programs and educational opportunities ... to help interested parents and caregivers share their Christian faith and values with their children." (round now closed)
+eligibility: "Eligible charitable organizations located in the United States were able submit proposals to create new or enhance existing programs that advance one or both of the following objectives: Supporting congregations (especially pastors, children and youth ministry staff and congregational volunteer leaders) and other Christian organizations by developing and providing resources, programs and educational opportunities ... to help interested parents and caregivers share their Christian faith and values with their children(round now closed)."
 deadline_type: annual_cycle
 next_deadline: ""
 application_url: "https://lillyendowment.org/christian-parenting-initiative/"
