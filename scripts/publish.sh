@@ -11,6 +11,7 @@ git add data/grants.csv 2>/dev/null || true
 git diff --cached --quiet -- data/grants.csv || git commit -m "data refresh (publish pre-step)"
 git pull --rebase
 "$PYTHON" scripts/gen_csv.py
+"$PYTHON" scripts/gen_home.py
 "$PYTHON" scripts/import_mathesar.py
 scp -q /tmp/grants_import.sql chroma-server:/tmp/
 ssh chroma-server "docker cp /tmp/grants_import.sql postgresql-db-db-1:/tmp/ && \

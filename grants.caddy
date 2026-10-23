@@ -1,9 +1,16 @@
 # grants.educatebarry.co — link-only boss table. __TOKEN__ is replaced at
 # deploy time (never in the repo). root path = container view of the
 # matrix_caddy_data volume (host: /var/lib/docker/volumes/matrix_caddy_data/_data).
+#
+# Heredoc rules learned on deploy: the marker must end the line EXACTLY (no
+# trailing space) or the heredoc never opens; the body precedes the status;
+# the closing marker line carries the status token.
 grants.educatebarry.co {
     header X-Robots-Tag "noindex, nofollow"
-    respond /robots.txt "User-agent: *\nDisallow: /\n" 200
+    respond /robots.txt <<ROBOTSTXT
+User-agent: *
+Disallow: /
+ROBOTSTXT 200
     @wrongpath not path /__TOKEN__/*
     respond @wrongpath "Not found" 404
     root * /data/sites/grants.educatebarry.co
