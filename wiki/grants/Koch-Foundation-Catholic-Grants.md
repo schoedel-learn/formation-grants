@@ -15,7 +15,7 @@ eligibility: "The Koch Foundation supports Catholic non-profit organizations as 
 deadline_type: annual_cycle
 next_deadline: ""
 application_url: "https://www.thekochfoundation.org/application-process-guide/"
-status: maybe
+status: applied
 submitted_on: ""
 decision: ""
 award_amount:
@@ -39,3 +39,4 @@ last_checked: "2026-10-22"
 - next_deadline blank: the 2026 request window (Jan 1–May 1) has closed; the page states the recurring window but not a dated 2027 call.
 - status: maybe — funded categories named on the page are "Direct Evangelization" and "Preparation of Evangelists"; our focus list has no verbatim match.
 - Grants received: see wiki/Grants-Received-2025-2027.md — Assumption Seminary received $15,000 for seminarian formation (FYE 3/2025, 990 + Koch annual report).
+- 2026-10-22 records scan: Assumption Seminary received $15,000 from Koch (FYE 3/2025, 990 + annual report) — relationship in hand; status changed from maybe to applied (owner direction: never surface as a NEW opportunity).

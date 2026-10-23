@@ -15,7 +15,7 @@ eligibility: "All grant applications must be considered annually at the Board of
 deadline_type: annual_cycle
 next_deadline: "2027-10-15"
 application_url: "https://kenedy.org/grants/application-process/"
-status: eligible
+status: applied
 submitted_on: ""
 decision: ""
 award_amount:
@@ -39,3 +39,4 @@ last_checked: "2026-10-22"
 - next_deadline blank: the Oct 15, 2026 deadline has just passed; the next date (2027-10-15) is derivable but not yet published as a dated call.
 - 2026-10-22: owner confirmed the applicant is the Archdiocese of San Antonio, TX — Texas-mandatory funds apply; next window per the verbatim cycle rule is 2027-10-15 (2026 window closed a week ago); upgraded maybe -> eligible.
 - Grants received: see wiki/Grants-Received-2025-2027.md — Kenedy gave archSA entities $422,000 in FY2024 (990 Schedule I) + a public-reported $620,000 aggregate across 10 grants in 2025. Largest recurring formation funder in the window.
+- 2026-10-22 records scan: archSA entities received $422,000 from Kenedy in FY2024 (990 Schedule I) and a public-reported $620,000 aggregate in 2025 — grants in hand; status changed from eligible so this never surfaces as a NEW opportunity (owner direction). Keep watching future cycles on this page without re-presenting it.

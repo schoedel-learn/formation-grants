@@ -15,7 +15,7 @@ eligibility: "To qualify to apply for a grant from Scanlan Foundation, your orga
 deadline_type: "annual_cycle"
 next_deadline: "2026-12-15"
 application_url: "https://scanlanfoundation.org/grants/"
-status: "eligible"
+status: "applied"
 submitted_on: ""
 decision: ""
 award_amount:
@@ -37,3 +37,4 @@ last_checked: "2026-10-22"
 - status: maybe — eligibility is limited by geography, quoted verbatim from the page on 2026-10-22: "your organization must be a Roman Catholic, 501(c)(3) nonprofit organization in the State of Texas." If the applicant (arch)diocese is one of the 15 Texas dioceses, treat as eligible.
 - 2026-10-22: owner confirmed the applicant is the Archdiocese of San Antonio, TX — squarely inside the Texas eligibility rule and the documented diocesan application class; upgraded maybe -> eligible.
 - Grants received: see wiki/Grants-Received-2025-2027.md — $275,000 unrestricted to the archdiocese in FY2024 (990 grant row, verbatim). We are a returning grantee; FY2025 filing lands by ~Feb 2027.
+- 2026-10-22 records scan: $275,000 unrestricted received from Scanlan in FY2024 (990 grant row, verbatim) — grants in hand; status changed from eligible to applied (owner direction: never surface as NEW). The 2027A/2027B cycle facts remain valid for the diocese's own continuing relationship.

@@ -7,8 +7,12 @@ CODEWIKI_URL = ""   # set to the codewiki.google URL once Google indexes the rep
 
 rows = [r for r in csv.DictReader(open('data/grants.csv', newline='', encoding='utf-8'))
         if r['status'] not in ('not_eligible', 'excluded')]
-rows.sort(key=lambda r: (r['status'] == 'awarded', r['next_deadline'] == '',
-                         r['next_deadline'], r['grantor'], r['grant']))
+IN_HAND = {'applied', 'awarded', 'declined'}
+active = [r for r in rows if r['status'] not in IN_HAND]
+inhand = [r for r in rows if r['status'] in IN_HAND]
+active.sort(key=lambda r: (r['next_deadline'] == '', r['next_deadline'],
+                           r['grantor'], r['grant']))
+inhand.sort(key=lambda r: (r['grantor'], r['grant']))
 os.makedirs('site', exist_ok=True)
 
 def esc(v):
@@ -20,15 +24,20 @@ def amount(r):
         return f"{lo} – {hi}"
     return lo or hi or '—'
 
-trs = "".join(
-    "<tr><td><b>{grant}</b></td><td>{grantor}</td><td>{focus}</td><td>{amt}</td>"
-    "<td>{ent}</td><td>{dl}</td><td>{st}</td>"
-    "<td><a href='{src}' rel='noopener'>source</a></td></tr>".format(
-        grant=esc(r['grant']), grantor=esc(r['grantor']),
-        focus=esc(r['focus_areas']), amt=esc(amount(r)),
-        ent=esc(r['grantee_entity']), dl=esc(r['next_deadline'] or '—'),
-        st=esc(r['status']), src=esc(r['source_url']))
-    for r in rows)
+def tr_html(r, bold=True):
+    name = esc(r['grant'])
+    if bold:
+        name = "<b>%s</b>" % name
+    return ("<tr><td>{grant}</td><td>{grantor}</td><td>{focus}</td><td>{amt}</td>"
+            "<td>{ent}</td><td>{dl}</td><td>{st}</td>"
+            "<td><a href='{src}' rel='noopener'>source</a></td></tr>".format(
+                grant=name, grantor=esc(r['grantor']),
+                focus=esc(r['focus_areas']), amt=esc(amount(r)),
+                ent=esc(r['grantee_entity']), dl=esc(r['next_deadline'] or '—'),
+                st=esc(r['status']), src=esc(r['source_url'])))
+
+trs_active = "".join(tr_html(r) for r in active)
+trs_inhand = "".join(tr_html(r, bold=False) for r in inhand)
 
 link_line = ("<p><a href='%s' rel='noopener'>Full wiki &rarr; Code Wiki</a></p>"
              % esc(CODEWIKI_URL)) if CODEWIKI_URL else ""
@@ -45,18 +54,25 @@ th,td{padding:6px 8px;border-bottom:1px solid #333;font-size:14px;text-align:lef
 th{position:sticky;top:0;background:#1c1c1c}
 h1{font-size:18px;margin:8px}small{color:#999}
 </style></head><body>
-<h1>Formation Grants — Active Opportunities</h1>
+<h1>Formation Grants — Open Opportunities Not Yet Applied For</h1>
 %(link)s
 <input id='q' placeholder='Filter by name, focus area, deadline…' autocomplete='off'>
+<h2>Open opportunities (%(n_active)s)</h2>
 <table><thead><tr><th>Grant</th><th>Grantor</th><th>Focus areas</th><th>Amount</th>
 <th>Who applies</th><th>Next deadline</th><th>Status</th><th>Source</th></tr></thead>
-<tbody>%(rows)s</tbody></table>
+<tbody>%(active)s</tbody></table>
+<h2>Already applied / receiving (%(n_inhand)s)</h2>
+<table><thead><tr><th>Grant</th><th>Grantor</th><th>Focus areas</th><th>Amount</th>
+<th>Who applies</th><th>Next deadline</th><th>Status</th><th>Source</th></tr></thead>
+<tbody>%(inhand)s</tbody></table>
 <small>Exported %(today)s. Link-only; not indexed.</small>
 <script>
 const q=document.getElementById('q'),rows=[...document.querySelectorAll('tbody tr')];
 q.addEventListener('input',()=>{const v=q.value.toLowerCase();
 rows.forEach(r=>{r.style.display=r.textContent.toLowerCase().includes(v)?'':'none'})});
-</script></body></html>""" % {'link': link_line, 'rows': trs,
+</script></body></html>""" % {'link': link_line, 'active': trs_active,
+                              'inhand': trs_inhand,
+                              'n_active': len(active), 'n_inhand': len(inhand),
                               'today': datetime.date.today().isoformat()}
 open('site/index.html', 'w').write(PAGE)
-print(f"wrote site/index.html with {len(rows)} rows")
+print(f"wrote site/index.html with {len(active)} open + {len(inhand)} in-hand rows")
