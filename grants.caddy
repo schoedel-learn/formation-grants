@@ -1,0 +1,11 @@
+# grants.educatebarry.co — link-only boss table. __TOKEN__ is replaced at
+# deploy time (never in the repo). root path = container view of the
+# matrix_caddy_data volume (host: /var/lib/docker/volumes/matrix_caddy_data/_data).
+grants.educatebarry.co {
+    header X-Robots-Tag "noindex, nofollow"
+    respond /robots.txt "User-agent: *\nDisallow: /\n" 200
+    @wrongpath not path /__TOKEN__/*
+    respond @wrongpath "Not found" 404
+    root * /data/sites/grants.educatebarry.co
+    file_server
+}
