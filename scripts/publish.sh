@@ -5,6 +5,10 @@
 set -eu
 cd "$HOME/Documents/Development/formation-grants"
 PYTHON=python3; [ -x .venv/bin/python3 ] && PYTHON=.venv/bin/python3   # repo venv has python-frontmatter
+# CSV is a committed artifact: a dirty local regen gets committed before pulling,
+# otherwise `git pull --rebase` refuses to run on a dirty tree.
+git add data/grants.csv 2>/dev/null || true
+git diff --cached --quiet -- data/grants.csv || git commit -m "data refresh (publish pre-step)"
 git pull --rebase
 "$PYTHON" scripts/gen_csv.py
 "$PYTHON" scripts/import_mathesar.py
