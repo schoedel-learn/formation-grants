@@ -63,5 +63,5 @@ elig = sum(1 for p in pages if p['status'] in ('eligible', 'maybe'))
 print(f"pages: {len(pages)}; eligible/maybe: {elig}; errors: {len(errors)}")
 for e in errors:
     print("  ", e)
-if errors or elig < 25:
+if errors or elig < 50:  # owner floor 2026-10-27: 50 verified opportunities minimum
     sys.exit(1)
